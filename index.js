@@ -8,7 +8,7 @@ const cors = require("cors");
 const userRouter = require("./routes/users");
 
 connectDb();
-app.use(cors({ origin: "*" }));
+app.use(cors());
 app.use(express.urlencoded({ extended: false }));
 
 app.use(express.json());
